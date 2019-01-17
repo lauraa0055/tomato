@@ -1,87 +1,145 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <title>title</title>
-  <style type="text/css">
-   
-   header{
-       border: 10px solid red;
-       padding:300px;
-       background: linear-gradient(to top, red, green);
-       text-align: center;
-       font-size: 100px;
-       
-      text-shadow: 4px 2px green;
-   }
-   
-   #tomato3{
-       
-       /*makes the tomato gif be to the right of the text*/
-       float:right;
-       width:100px;
-   }
+    <style type="text/css">
+        header {
+            border: 10px solid red;
+            padding: 300px;
+            background: linear-gradient(to top, red, green);
+            text-align: center;
+            font-size: 100px;
 
-#apple{
-    width: 100px;
-    float:left;
-         transition: width 2s;
+            text-shadow: 4px 2px green;
+        }
 
+        #tomato3 {
+
+            /*makes the tomato gif be to the right of the text*/
+            float: right;
+            width: 100px;
+        }
+
+        #apple {
+            width: 100px;
+            float: left;
+            transition: width 2s;
+
+        }
+
+
+
+        #tomato3:hover {
+            transform: rotate(180deg);
+
+            transition-duration: 10s;
+        }
+
+        #apple:hover {
+            width: 20px;
+        }
+
+
+
+        #tomato4 {
+            width: 100px;
+            animation-duration: 2s;
+            animation-iteration-count: infinate;
+            animation-name: falling;
+        }
+
+        @keyframes falling {
+            from {
+                margin-bottom: 0px;
+                width: 500px;
+            }
+
+            to {
+                margin-top:100px;
+                width: 100px;
+
+            }
+            
+            
+            
+
+            
+        }
+        
+        
+        #apple2{
+            width:50px;
+        }
+        
+li{
+  position:absolute;
+  animation-duration:1s;
+  animation-iteration-count: infinate;
+  animation-name: falling;
 }
 
 
+li:nth-child(1){
+  top:0;
+  left:10;
+}
+
+li:nth-child(2){
+  top:00px;
+  bottom:0;
+  left:10px;
+}
+
+@keyframes falling{
+  from{
+    margin-bottom:100px;
+  }
   
-#tomato3:hover{
-transform: rotate(180deg);
+  to{
+    margin-top:1000px;
+  }
+}
+        
+    </style>
+</head>
 
-transition-duration: 10s;
- }
- 
- #apple:hover{
-     width: 20px;
- }
- 
- 
- 
- #tomato4{
-     width:100px;
-     animation-duration:2s;
-     animation-iteration-count: infiinate;
-     animation-name:falling;
- }
- 
- @keyframes falling{
-     from{
-         margin:top;
-         width:0px;
-     }
-     
-     to{
-         margin:bottom;
-         width:100px;
-         
-     }
- }
- 
-
-   
-  </style>
-  </head>
-  <body>
-      
-      <img id= "tomato4" src="tomato3.png"></img>
-
-<!--<img id="tomato3" src= "tomato3.png">-->
- <!--<img id="tomato1" src="tomato.gif">-->
-  
-  
-    <header><h1>T<span style="color:red">o</span>mato <img id="tomato3" src= "tomato3.png"> <img id="apple" src="apple.png">
-</h1>
-      </header>
+<body>
 
 
-  
 
-  
-  </body>
+    <!--<img id="tomato3" src= "tomato3.png">-->
+    <!--<img id="tomato1" src="tomato.gif">-->
+
+<ul> <li><img id= "apple2" src="apple.png"></li>
+<li><img id= "apple2" src="apple.png"></li></ul>
+
+
+
+
+
+    <header>
+
+
+        <img id="tomato4" src="tomato3.png"></img>
+        <h1>T<span style="color:red">o</span>mato <img id="tomato3" src="tomato3.png"> <img id="apple" src="apple.png">
+        
+            
+
+
+        </h1>
+    </header>
+
+
+
+
+
+
+
+
+</body>
+
 </html>
+
+
