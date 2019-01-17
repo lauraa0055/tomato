@@ -15,30 +15,73 @@
       text-shadow: 4px 2px green;
    }
    
-   #tomato1{
+   #tomato3{
        
        /*makes the tomato gif be to the right of the text*/
        float:right;
+       width:100px;
    }
-   
-   
-   #tomato2{
-       width:50px;
-       height:50px;
-   }
+
+#apple{
+    width: 100px;
+    float:left;
+         transition: width 2s;
+
+}
+
+
   
-   img:hover{
-       border-radius: 50%;
-   }
+#tomato3:hover{
+transform: rotate(180deg);
+
+transition-duration: 10s;
+ }
+ 
+ #apple:hover{
+     width: 20px;
+ }
+ 
+ 
+ 
+ #tomato4{
+     width:100px;
+     animation-duration:2s;
+     animation-iteration-count: infiinate;
+     animation-name:falling;
+ }
+ 
+ @keyframes falling{
+     from{
+         margin:top;
+         width:0px;
+     }
+     
+     to{
+         margin:bottom;
+         width:100px;
+         
+     }
+ }
+ 
+
    
   </style>
   </head>
   <body>
+      
+      <img id= "tomato4" src="tomato3.png"></img>
+
+<!--<img id="tomato3" src= "tomato3.png">-->
+ <!--<img id="tomato1" src="tomato.gif">-->
   
-    <header><h1>T<span style="color:red">o</span><img id="tomato1" src="tomato.gif">mato</h1></header>
   
+    <header><h1>T<span style="color:red">o</span>mato <img id="tomato3" src= "tomato3.png"> <img id="apple" src="apple.png">
+</h1>
+      </header>
+
+
   
+
   
-  <img id= "tomato2" src="tomato3.png"></img>
   </body>
 </html>
